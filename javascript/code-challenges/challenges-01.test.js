@@ -9,9 +9,9 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-let newArray = [];
-arr.forEach(number => newArray.push(number + 1));
-return newArray;
+  let newArray = [];
+  arr.forEach(number => newArray.push(number + 1));
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -85,7 +85,7 @@ const addValues = (arr, value) => {
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  for(let i = 0; i < times; i++) {
+  for (let i = 0; i < times; i++) {
     callback(arr, num);
   }
   return arr;
@@ -134,7 +134,7 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-// I'm too tired for this
+  // I'm too tired for this
 };
 
 /* ------------------------------------------------------------------------------------------------
