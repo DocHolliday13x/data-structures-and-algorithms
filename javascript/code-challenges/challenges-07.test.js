@@ -133,7 +133,15 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  // Solution code here...
+
+  for (let i = 0; i < recipe.ingredients.length; i++) {
+    let ingredient = recipe.ingredients[i];
+    let spaceIndex = ingredient.indexOf(' ');
+    let food = ingredient.slice(spaceIndex + 1);
+
+    result.push(food);
+  }
+
   return result;
 };
 
