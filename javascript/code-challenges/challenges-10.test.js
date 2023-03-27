@@ -110,16 +110,27 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  const result = [];
-  hours.forEach((hour, index) => { // forEach iterates over hours
-    let totalSales = 0;
-    data.forEach(store => { // nested forEach calculates cookies sold per hour iterated in previous forEach
-      totalSales += store[index];
+  let salesArr = [];
+
+  data.forEach((cookieVal, idx) => {
+    salesArr.push({
+      sales: `${cookieVal} cookies`,
+      time: hours[idx]
     });
-    result.push({ sales: `${totalSales} cookies`, time: hour }); // pushes object with sales data to result array
   });
-  return result;
+  return salesArr;
 };
+
+// my attempt below
+// const result = [];
+// hours.forEach((hour, index) => { // forEach iterates over hours
+//   let totalSales = 0;
+//   data.forEach(store => { // nested forEach calculates cookies sold per hour iterated in previous forEach
+//     totalSales += store[index];
+//   });
+//   result.push({ sales: `${totalSales} cookies`, time: hour }); // pushes object with sales data to result array
+// });
+// return result;
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
