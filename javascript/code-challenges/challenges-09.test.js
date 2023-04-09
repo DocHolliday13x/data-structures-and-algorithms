@@ -9,11 +9,8 @@ using the 'reduce' method.
 E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
-
   return arr.reduce((max, current) => {
-
     return current > max ? current : max;
-
   });
 };
 
@@ -30,7 +27,6 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
 };
 
 const getCourseKeys = (obj) => {
-
   return Object.keys(obj);
 };
 
@@ -66,11 +62,7 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-  let newData = [];
-
-  Object.keys(obj).forEach(key => newData.push(`${key}: ${obj[key]}`));
-
-  return newData;
+  return Object.entries(obj).map(([name, number]) => `${name}: ${number}`);
 };
 
 
@@ -125,13 +117,11 @@ const characters = [
 ];
 
 const getHouses = (arr) => {
-  let houses = []; // create an empty array to hold the houses
-  arr.forEach((character) => { // iterate over the array
-    if (!houses.includes(character.house)) { // if the house isn't already in the array
-      houses.push(character.house); // add it
-    }
+  let houses = [];
+  arr.forEach((character) => {
+    houses.push(character.house);
   });
-  return houses; // return the array of houses
+  return houses;
 };
 
 /*------------------------------------------------------------------------------------------------
@@ -147,16 +137,14 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
+  let hasChildren = false;
+  arr.forEach((person) => {
+    if (person.name === character && person.children) {
+      hasChildren = true;
+    }
+  });
+  return hasChildren;
 
-  const selectedCharacter = arr.find((c) => c.name === character);
-
-  if (!selectedCharacter) {
-    return false;
-  }
-
-  const values = Object.values(selectedCharacter);
-
-  return values.some((value) => Array.isArray(value) && value.length > 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
