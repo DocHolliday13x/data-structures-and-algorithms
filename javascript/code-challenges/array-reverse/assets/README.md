@@ -5,7 +5,7 @@ Today's assignment is to create a whiteboard that portrays my process of creatin
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![Whiteboard](javascript/code-challenges/array-reverse/assets/codeChallenge1Whiteboard.png)
+![Whiteboard](/public/codeChallenge1Whiteboard.png)
 
 ## Approach and Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->

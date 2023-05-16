@@ -10,7 +10,7 @@ Today's assignment is to create a whiteboard that portrays my process of creatin
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![Whiteboard](javascript/code-challenges/array-reverse/assets/codeChallenge02Whiteboard.png)
+![Whiteboard](/public/codeChallenge02Whiteboard.png)
 
 ## Approach and Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -22,4 +22,4 @@ The Big O space/time for this approach is O(n) because we are iterating through 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 
-![isaTests](javascript/code-challenges/array-reverse/assets/insert-shift-array-tests.png)
+![isaTests](/public/insert-shift-array-tests.png)
