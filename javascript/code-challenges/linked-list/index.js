@@ -45,6 +45,15 @@ class LinkedList {
     string += 'NULL';
     return string;
   }
+
+  // Define a method called append which adds a new node with the given value to the end of the list
+
+  // Define a method called insert before which adds a new node with the given newValue immediately before the first node that has the value specified
+
+  // Define a method called insert after which add a new node with the given newValue immediately after the first node that has the value specified
+
+  // Code Challenge 06 Stretch Goal
+  // Define a method called delete which deletes a node with the given value from the linked list
 }
 
 // Exports
