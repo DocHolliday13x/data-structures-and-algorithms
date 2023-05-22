@@ -35,6 +35,11 @@ class LinkedList {
       this.head = node;
       return;
     }
+    if (this.head.value === value) {
+      node.next = this.head;
+      this.head = node;
+      return;
+    }
     let current = this.head;
     while (current.next) {
       if (current.next.value === value) {
@@ -68,7 +73,23 @@ class LinkedList {
 
   // Code Challenge 06 Stretch Goal
   // Define a method called delete which deletes a node with the given value from the linked list
-
+  delete(value) {
+    if (!this.head) {
+      return;
+    }
+    if (this.head.value === value) {
+      this.head = this.head.next;
+      return;
+    }
+    let current = this.head;
+    while (current.next) {
+      if (current.next.value === value) {
+        current.next = current.next.next;
+        return;
+      }
+      current = current.next;
+    }
+  }
 }
 
 // Exports
