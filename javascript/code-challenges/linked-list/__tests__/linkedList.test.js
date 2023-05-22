@@ -5,6 +5,7 @@ const { LinkedList } = require('../index.js');
 
 // Tests
 describe('Linked List', () => {
+  // Code Challenge 05 Tests
   // 1. Can successfully instantiate an empty linked list
   it('Can successfully instantiate an empty linked list', () => {
     const list = new LinkedList();
@@ -73,6 +74,22 @@ describe('Linked List', () => {
     list.insert('c');
     expect(list.toString()).toEqual('{ c } -> { b } -> { a } -> NULL');
   });
+
+  // Code Challenge 06 Tests
+  // Can successfully add a node to the end of the linked list
+
+  // Can successfully add multiple nodes to the end of a linked list
+
+  // Can successfully insert a node before a node located i the middle of a linked list
+
+  // Can successfully insert a node before the first node of a linked list
+
+  // Can successfully insert after a node in the middle of the linked list
+
+  // Can successfully insert a node after the last node of the linked list
+
+  // Stretch Goal
+  // Can successfully delete a node with a given value from the linked list
 
 });
 
