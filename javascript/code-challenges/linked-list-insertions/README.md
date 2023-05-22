@@ -10,13 +10,17 @@ Today's assignment is to create a whiteboard that portrays the process of creati
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 Today's approach will be very similar to last week's Linked List Code Challenge 05 in the sense that we will have to create our two classes (node and linkedList) and the required methods (`append()`, `insertBefore()`, and `insertAfter()`). I estimate that the Big O space/time for this approach will be O(n) because the time it takes to complete the function is directly proportional to the size of the input. It's difficult to estimate the space complexity because it's not clear how much memory will be used until I have the necessary code written.
 
-I have 3 methods that I can apply the Big O space/time equation to:
+I have 3 methods that I need to apply the Big O space/time equation to:
 
 1. `append(value)`: Time Complexity - O(n) Space Complexity - O(1)
 
 2. `insertBefore(value, newValue)`: Time Complexity - O(n) Space Complexity - O(1)
 
 3. `insertAfter(value, newValue)`: Time Complexity - O(n) Space Complexity - O(1)
+
+Then I have the stretch goal delete method as well:
+
+1. `delete(value)`: Time Complexity - O(n) Space Complexity - O(1)
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
@@ -31,4 +35,8 @@ I have 3 methods that I can apply the Big O space/time equation to:
 
 4. I created my tests in the `linked-list-insertion.test.js` file per instruction.
 
-5. With my test written, I ran `npm test` in my terminal and saw that 1 test suite passed with num total passing tests.
+5. With my test written, I ran `npm test` in my terminal and saw that 1 test suite passed with 8 total passing tests.
+
+6. Test Coverage: Statements 78.84%, Branches 66.66%, Functions 100%, Lines 78.84%
+
+   - ![Terminal](/public/codeChallenge06Tests.png)
