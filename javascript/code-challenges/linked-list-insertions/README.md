@@ -35,4 +35,8 @@ Then I have the stretch goal delete method as well:
 
 4. I created my tests in the `linked-list-insertion.test.js` file per instruction.
 
-5. With my test written, I ran `npm test` in my terminal and saw that 1 test suite passed with num total passing tests.
+5. With my test written, I ran `npm test` in my terminal and saw that 1 test suite passed with 8 total passing tests.
+
+6. Test Coverage: Statements 78.84%, Branches 66.66%, Functions 100%, Lines 78.84%
+
+   - ![Terminal](/public/codeChallenge06Tests.png)
