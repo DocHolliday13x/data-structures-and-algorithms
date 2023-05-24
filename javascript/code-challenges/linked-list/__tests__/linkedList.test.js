@@ -12,6 +12,7 @@ describe('Linked List', () => {
     expect(list.head).toBeNull();
   });
 
+  // Code Challenge 05 Tests
   // 2. Can properly insert into the linked list
   it('Can properly insert into the linked list', () => {
     const list = new LinkedList();
@@ -77,19 +78,97 @@ describe('Linked List', () => {
 
   // Code Challenge 06 Tests
   // Can successfully add a node to the end of the linked list
+  it('Can successfully add a node to the end of the linked list', () => {
+    const list = new LinkedList();
+    list.insert('a');
+    list.insert('b');
+    list.insert('c');
+    list.append('d');
+    expect(list.toString()).toEqual('{ c } -> { b } -> { a } -> { d } -> NULL');
+  });
 
   // Can successfully add multiple nodes to the end of a linked list
+  it('Can successfully add multiple nodes to the end of a linked list', () => {
+    const list = new LinkedList();
+    list.insert('a');
+    list.insert('b');
+    list.insert('c');
+    list.append('d');
+    list.append('e');
+    expect(list.toString()).toEqual('{ c } -> { b } -> { a } -> { d } -> { e } -> NULL');
+  });
 
   // Can successfully insert a node before a node located i the middle of a linked list
+  it('Can successfully insert a node before a node located i the middle of a linked list', () => {
+    const list = new LinkedList();
+    list.insert('a');
+    list.insert('b');
+    list.insert('c');
+    list.insertBefore('b', 'd');
+    expect(list.toString()).toEqual('{ c } -> { d } -> { b } -> { a } -> NULL');
+  });
 
   // Can successfully insert a node before the first node of a linked list
+  it('Can successfully insert a node before the first node of a linked list', () => {
+    const list = new LinkedList();
+    list.insert('a');
+    list.insert('b');
+    list.insert('c');
+    list.insertBefore('c', 'd');
+    expect(list.toString()).toEqual('{ d } -> { c } -> { b } -> { a } -> NULL');
+  });
 
   // Can successfully insert after a node in the middle of the linked list
+  it('Can successfully insert after a node in the middle of the linked list', () => {
+    const list = new LinkedList();
+    list.insert('a');
+    list.insert('b');
+    list.insert('c');
+    list.insertAfter('b', 'd');
+    expect(list.toString()).toEqual('{ c } -> { b } -> { d } -> { a } -> NULL');
+  });
 
   // Can successfully insert a node after the last node of the linked list
+  it('Can successfully insert a node after the last node of the linked list', () => {
+    const list = new LinkedList();
+    list.insert('a');
+    list.insert('b');
+    list.insert('c');
+    list.insertAfter('a', 'd');
+    expect(list.toString()).toEqual('{ c } -> { b } -> { a } -> { d } -> NULL');
+  });
 
   // Stretch Goal
   // Can successfully delete a node with a given value from the linked list
+  it('Can successfully delete a node with a given value from the linked list', () => {
+    const list = new LinkedList();
+    list.insert('a');
+    list.insert('b');
+    list.insert('c');
+    list.delete('b');
+    expect(list.toString()).toEqual('{ c } -> { a } -> NULL');
+  });
+
+  // Code Challenge 07 Tests
+
+  // Code Challenge 08 Tests
+  // Can successfully zip two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list
+  it('Can successfully zip two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list', () => {
+    const list1 = new LinkedList();
+    list1.insert('a');
+    list1.insert('b');
+    list1.insert('c');
+
+    const list2 = new LinkedList();
+    list2.insert('1');
+    list2.insert('2');
+    list2.insert('3');
+
+    const mergedList = list1.zipLists(list2);
+    const expectedOutput = '{ c } -> { 3 } -> { b } -> { 2 } -> { a } -> { 1 } -> NULL';
+
+    expect(mergedList.toString()).toEqual(expectedOutput);
+  });
 
 });
 
