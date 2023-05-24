@@ -29,8 +29,8 @@ Ok, so after running my tests, I see that I have 3 methods that I can apply the 
 
 4. I created my tests in the `linked-list.test.js` file per instruction.
 
-5. With my test written, I ran `npm test` in my terminal and saw that 1 test suite passed with 7 total passing tests. I also saw that the coverage was 100% for statements, branches, functions, and lines. I'm still not sure what that means, but it sounds good and green is a super nice color to see.
+5. With my test written, I ran `npm test` in my terminal and saw that 1 test suite passed with
 
 6. I'm going to add a screenshot of my terminal after running `npm test` and a screenshot of my code coverage report.
 
-   - ![Terminal](/public/codeChallenge05tests.png)
+   - ![Terminal](/public/codeChallenge07tests.png)
