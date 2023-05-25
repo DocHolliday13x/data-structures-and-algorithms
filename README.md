@@ -25,3 +25,7 @@ To run your tests
 | Code Challenge | Link |
 | ----------- | ----------- |
 | 01 | [array-reverse](./javascript/array-reverse/README.md) |
+| 02 | [insert-shift-array](./javascript/insert-shift-array/README.md) |
+| 03 | [array-binary-search](./javascript/array-binary-search/README.md) |
+| 05 | [linked-list](./javascript/linked-list/README.md) |
+| 06 | [linked-list-insertions](./javascript/linked-list-insertions/README.md) |
