@@ -88,3 +88,7 @@ I estimate that the Big O space/time for this approach will be O(n) because the 
     - ![Code Coverage](/public/codeChallengeTotalTests.png)
 
 7. Ok, so I'm failing my zipList tests. I'm going to go back and fix that eventually.
+
+8. Thanks to Joshua Coffey, I am now passing zipList tests.
+
+![Josh](https://media.giphy.com/media/3o7TKF1fSIs1R19B8k/giphy.gif)

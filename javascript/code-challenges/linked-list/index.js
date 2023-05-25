@@ -138,7 +138,7 @@ class LinkedList {
   // Code Challenge 08
   // Write a function called zipLists which takes two linked lists as arguments, and returns a new linked list with the nodes from each list interwoven.
   // Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the zipped list.
-  zipLists(list1, list2) {
+  static zipLists(list1, list2) {
     let current1 = list1.head;
     let current2 = list2.head;
     const newList = new LinkedList();

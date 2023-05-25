@@ -1,7 +1,7 @@
 `use strict`;
 
 // Imports/Requires
-const { LinkedList, zipLists } = require('../index.js');
+const { LinkedList } = require('../index.js');
 
 // Tests
 describe('Linked List', () => {
@@ -156,23 +156,39 @@ describe('Linked List', () => {
   // Code Challenge 08 Tests
   // Can successfully zip two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list
   it('Can successfully zip two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list', () => {
+    // const list1 = new LinkedList();
+    // const list2 = new LinkedList();
+    // list1.append('a');
+    // list1.append('b');
+    // list1.append('c');
+    // list2.append('1');
+    // list2.append('2');
+    // list2.append('3');
+
+    // const zippedList = zipLists(list1, list2);
+    // expect(zippedList.head.value).toEqual('a');
+    // expect(zippedList.head.next.value).toEqual('1');
+    // expect(zippedList.head.next.next.value).toEqual('b');
+    // expect(zippedList.head.next.next.next.value).toEqual('2');
+    // expect(zippedList.head.next.next.next.next.value).toEqual('c');
+    // expect(zippedList.head.next.next.next.next.next.value).toEqual('3');
+    // expect(zippedList.head.next.next.next.next.next.next).toBeNull();
+
     const list1 = new LinkedList();
     const list2 = new LinkedList();
-    list1.insert('a');
-    list1.insert('b');
-    list1.insert('c');
-    list2.insert('1');
-    list2.insert('2');
-    list2.insert('3');
+    list1.append(1);
+    list1.append(2);
+    list1.append(3);
+    list1.append(4);
+    list1.append(5);
+    list2.append(1);
+    list2.append(2);
+    list2.append(3);
+    list2.append(4);
+    list2.append(5);
+    let zippedList = LinkedList.zipLists(list1, list2);
+    expect(zippedList.toString()).toEqual('{ 1 } -> { 1 } -> { 2 } -> { 2 } -> { 3 } -> { 3 } -> { 4 } -> { 4 } -> { 5 } -> { 5 } -> NULL');
 
-    const zippedList = zipLists(list1, list2);
-    expect(zippedList.head.value).toEqual('a');
-    expect(zippedList.head.next.value).toEqual('1');
-    expect(zippedList.head.next.next.value).toEqual('b');
-    expect(zippedList.head.next.next.next.value).toEqual('2');
-    expect(zippedList.head.next.next.next.next.value).toEqual('c');
-    expect(zippedList.head.next.next.next.next.next.value).toEqual('3');
-    expect(zippedList.head.next.next.next.next.next.next).toBeNull();
   });
 
 });
