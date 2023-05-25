@@ -1,7 +1,7 @@
 `use strict`;
 
 // Imports/Requires
-const { LinkedList } = require('../index.js');
+const { LinkedList, zipLists } = require('../index.js');
 
 // Tests
 describe('Linked List', () => {
@@ -95,7 +95,9 @@ describe('Linked List', () => {
     list.insert('c');
     list.append('d');
     list.append('e');
-    expect(list.toString()).toEqual('{ c } -> { b } -> { a } -> { d } -> { e } -> NULL');
+    expect(list.toString()).toEqual(
+      '{ c } -> { b } -> { a } -> { d } -> { e } -> NULL'
+    );
   });
 
   // Can successfully insert a node before a node located i the middle of a linked list
@@ -155,23 +157,22 @@ describe('Linked List', () => {
   // Can successfully zip two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list
   it('Can successfully zip two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list', () => {
     const list1 = new LinkedList();
+    const list2 = new LinkedList();
     list1.insert('a');
     list1.insert('b');
     list1.insert('c');
-
-    const list2 = new LinkedList();
     list2.insert('1');
     list2.insert('2');
     list2.insert('3');
 
-    const mergedList = list1.zipLists(list2);
-    const expectedOutput = '{ c } -> { 3 } -> { b } -> { 2 } -> { a } -> { 1 } -> NULL';
-
-    expect(mergedList.toString()).toEqual(expectedOutput);
+    const zippedList = zipLists(list1, list2);
+    expect(zippedList.head.value).toEqual('a');
+    expect(zippedList.head.next.value).toEqual('1');
+    expect(zippedList.head.next.next.value).toEqual('b');
+    expect(zippedList.head.next.next.next.value).toEqual('2');
+    expect(zippedList.head.next.next.next.next.value).toEqual('c');
+    expect(zippedList.head.next.next.next.next.next.value).toEqual('3');
+    expect(zippedList.head.next.next.next.next.next.next).toBeNull();
   });
 
 });
-
-
-
-

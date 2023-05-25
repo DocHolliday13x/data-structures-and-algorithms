@@ -69,12 +69,19 @@ class LinkedList {
       this.head = node;
       return;
     }
+    if (this.head.value === value) {
+      node.next = this.head;
+      this.head = node;
+      return;
+    }
     let current = this.head;
-    while (current.next.value !== value) {
+    while (current.next && current.next.value !== value) {
       current = current.next;
     }
-    node.next = current.next;
-    current.next = node;
+    if (current.next) {
+      node.next = current.next;
+      current.next = node;
+    }
   }
 
   // Define a method called insert after which add a new node with the given newValue immediately after the first node that has the value specified
@@ -134,7 +141,7 @@ class LinkedList {
   zipLists(list1, list2) {
     let current1 = list1.head;
     let current2 = list2.head;
-    let newList = new LinkedList();
+    const newList = new LinkedList();
     while (current1 || current2) {
       if (current1) {
         newList.append(current1.value);
@@ -151,4 +158,4 @@ class LinkedList {
 }
 
 // Exports
-module.exports = { Node, LinkedList};
+module.exports = { Node, LinkedList };
