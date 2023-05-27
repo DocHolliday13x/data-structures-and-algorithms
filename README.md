@@ -28,4 +28,7 @@ To run your tests
 | 02 | [insert-shift-array](./javascript/insert-shift-array/README.md) |
 | 03 | [array-binary-search](./javascript/array-binary-search/README.md) |
 | 05 | [linked-list](./javascript/linked-list/README.md) |
-| 06 | [linked-list-insertions](./javascript/linked-list-insertions/README.md) |
+| 06 | [linked-list-insertions](./javascript/linked-list/README.md) |
+| 07 | [linked-list-kth](./javascript/linked-list/README.md) |
+| 08 | [linked-list-zip](./javascript/linked-list/README.md) |
+| 10 | [stack-and-queue](./javascript/code-challenges/stack-and-queue/README.md) |
