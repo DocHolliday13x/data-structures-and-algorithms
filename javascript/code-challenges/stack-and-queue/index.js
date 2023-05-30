@@ -99,9 +99,42 @@ class Queue {
   }
 }
 
+// Code Challenge 11: Stack Queue Pseudo
+// Create a new class called psuedo queue. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods:
+
+class PseudoQueue {
+  constructor() {
+    this.stack1 = new Stack();
+    this.stack2 = new Stack();
+  }
+
+  // Define a method called enqueue which takes any value as an argument. It then inserts a value into the PseudoQueue, using a first-in, first-out approach.
+  enqueue(value) {
+    while (!this.stack1.isEmpty()) {
+      this.stack2.push(this.stack1.pop());
+    }
+    this.stack1.push(value);
+    while (!this.stack2.isEmpty()) {
+      this.stack1.push(this.stack2.pop());
+    }
+  }
+
+  // Define a method called dequeue that does not take any argument. It then extracts a value from the PseudoQueue, using a first-in, first-out approach.
+  dequeue() {
+    if (this.stack1.isEmpty()) {
+      return null;
+    } else {
+      return this.stack1.pop();
+    }
+  }
+}
+
+
+
 module.exports = {
   // Node,
   Stack,
   Queue,
+  PseudoQueue,
 };
 
