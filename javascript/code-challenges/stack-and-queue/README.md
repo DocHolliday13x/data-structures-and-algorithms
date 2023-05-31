@@ -52,7 +52,6 @@ I started with a whiteboard of the AnimalShelter implementation. I then created 
 - `enqueue()` - O(n)
 - `dequeue()` - O(n)
 
-
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 
