@@ -33,3 +33,4 @@ To run your tests
 | 08 | [linked-list-zip](./javascript/linked-list/README.md) |
 | 10 | [stack-and-queue](./javascript/code-challenges/stack-and-queue/README.md) |
 | 11 | [stack-queue-pseudo](./javascript/code-challenges/stack-and-queue/README.md) |
+| 12 | [stack-queue-animal-shelter](./javascript/code-challenges/stack-and-queue/README.md) |
