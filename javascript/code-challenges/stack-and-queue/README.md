@@ -7,6 +7,9 @@ Today's assignment will include a whiteboard of a stack and queue implementation
 **Code Challenge 11 - PsuedoQueue**
 Today's assignment is simply to add a PsuedoQueue class to implement a queue using two stacks. I will include my whiteboard for this process below. Then I will go into my index.js file where I will create a new class called PsuedoQueue. I will then create a new instance of the Stack class for the first stack and a new instance of the Stack class for the second stack. I will then create the required methods for the PsuedoQueue class. No additional tests need to be written for today's assignment.
 
+**Code Challenge 12 - Stack Queue Animal Shelter**
+Today's assignment is to create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach. I will create a whiteboard for this process and then create a new class called AnimalShelter. I will then create a new instance of the Queue class. I will then create the required methods for the AnimalShelter class. No additional tests need to be written for today's assignment.
+
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 - **Code Challenge 10**
