@@ -20,9 +20,13 @@ Today's assignment is to create a class called AnimalShelter which holds only do
 
 - ![Whiteboard](/public/codeChallenge11whiteboard.png)
 
+- **Code Challenge 12**
+
+- ![Whiteboard](/public/codeChallenge12Whiteboard.png)
+
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-**Code Challenge 10 - Stack and Queue**
+- **Code Challenge 10 - Stack and Queue**
 I started with a whiteboard of the stack and queue implementation. I then created a Node class, a Stack class and a Queue class that will use the Node class. I then created a test file to test the functionality of the Stack and Queue classes and the methods I create. I'll have to plug my methods into Chat GPT to get the Big O space/time for this approach. The following methods will have a Big O space/time complexity:
 
 - `push()` - O(1)
@@ -35,6 +39,19 @@ I started with a whiteboard of the stack and queue implementation. I then create
 - `isEmpty()` - O(1)
 
 I didn't actually run the Big O space/time complexity on the methods above. I just assumed they would be O(1) because they are all constant time operations.
+
+- **Code Challenge 11 - PsuedoQueue**
+I started with a whiteboard of the PsuedoQueue implementation. I then created a PsuedoQueue class that will use two Stack classes. I then created the required methods for the PsuedoQueue class. I'll have to plug my methods into Chat GPT to get the Big O space/time for this approach. The following methods will have a Big O space/time complexity:
+
+- `enqueue()` - O(n)
+- `dequeue()` - O(n)
+
+- **Code Challenge 12 - Stack Queue Animal Shelter**
+I started with a whiteboard of the AnimalShelter implementation. I then created an AnimalShelter class that will use a Queue class. I then created the required methods for the AnimalShelter class. I'll have to plug my methods into Chat GPT to get the Big O space/time for this approach. The following methods will have a Big O space/time complexity:
+
+- `enqueue()` - O(n)
+- `dequeue()` - O(n)
+
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
@@ -75,3 +92,13 @@ I didn't actually run the Big O space/time complexity on the methods above. I ju
 3. I created the required methods for the `PsuedoQueue` class.
 
 4. That's it. No additional tests need to be written for today's assignment.
+
+- **Code Challenge 12 - Stack Queue Animal Shelter**
+
+1. I created a new class called `Animal` in my `index.js` file.
+
+2. I created a new class called `AnimalShelter` in my `index.js` file.
+
+3. I created a new instance of the `Queue` class.
+
+4. I created the required methods for the `AnimalShelter` class.
