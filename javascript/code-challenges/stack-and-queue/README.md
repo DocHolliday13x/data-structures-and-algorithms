@@ -10,6 +10,9 @@ Today's assignment is simply to add a PsuedoQueue class to implement a queue usi
 **Code Challenge 12 - Stack Queue Animal Shelter**
 Today's assignment is to create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach. I will create a whiteboard for this process and then create a new class called AnimalShelter. I will then create a new instance of the Queue class. I will then create the required methods for the AnimalShelter class. No additional tests need to be written for today's assignment.
 
+**Code Challenge 13 - Multi Bracket Validation**
+Today's assignment is to create a function called validateBrackets(`string`) that takes in a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. I will create a whiteboard for this process and then create a function called validateBrackets(`string`). I will then create the required methods for the multiBracketValidation(input) function. I will then create a test file to test the functionality of the multiBracketValidation(input) function.
+
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 - **Code Challenge 10**
@@ -23,6 +26,10 @@ Today's assignment is to create a class called AnimalShelter which holds only do
 - **Code Challenge 12**
 
 - ![Whiteboard](/public/codeChallenge12Whiteboard.png)
+
+- **Code Challenge 13**
+
+- ![Whiteboard](/public/codeChallenge13Whiteboard.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -51,6 +58,11 @@ I started with a whiteboard of the AnimalShelter implementation. I then created 
 
 - `enqueue()` - O(n)
 - `dequeue()` - O(n)
+
+- **Code Challenge 13 - Multi Bracket Validation**
+I started with a whiteboard of the multiBracketValidation(input) function. I then created the required methods for the multiBracketValidation(input) function. I'll have to plug my function into Chat GPT to get the Big O space/time for this approach. The following methods will have a Big O space/time complexity:
+
+- `multiBracketValidation(input)` - O(n)
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
@@ -101,3 +113,9 @@ I started with a whiteboard of the AnimalShelter implementation. I then created 
 3. I created a new instance of the `Queue` class.
 
 4. I created the required methods for the `AnimalShelter` class.
+
+- **Code Challenge 13 - Multi Bracket Validation**
+
+1. I created a new function called `multiBracketValidation(input)` in my `index.js` file.
+
+2. I had chat GPT write the test for me.
