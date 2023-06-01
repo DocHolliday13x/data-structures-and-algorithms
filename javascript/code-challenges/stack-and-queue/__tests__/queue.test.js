@@ -103,12 +103,10 @@ describe('Queue', () => {
   // 1. Can successfully add animals to correct queue
   it('Can successfully add animals to correct queue', () => {
     let shelter = new AnimalShelter();
-    shelter.enqueue('Barry','dog');
-    shelter.enqueue('Bella','dog');
-    shelter.enqueue('Fwah', 'cat');
-
-    expect(shelter.dog.front.name).toEqual('Barry');
-    expect(shelter.cats.front.name).toEqual('Fwah');
+    shelter.enqueue('dog');
+    expect(shelter.dog.front.value).toEqual('dog');
+    shelter.enqueue('cat');
+    expect(shelter.cat.front.value).toEqual('cat');
   });
 
   // Code Challenge 13 Tests
