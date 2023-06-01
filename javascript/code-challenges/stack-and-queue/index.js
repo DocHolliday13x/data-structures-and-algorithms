@@ -34,6 +34,15 @@ class Stack {
     temp.next = null;
     return temp.value;
   }
+  // pop() {
+  //   if (!this.top) {
+  //     throw new Error('Cannot pop from empty stack');
+  //   }
+  //   let temp = this.top;
+  //   this.top = this.top.next;
+  //   this.size--;
+  //   return temp.data;
+  // }
 
   // Define a method called peek that does not take an argument and returns the value of the node located on top of the stack, without removing it from the stack.
   peek() {
