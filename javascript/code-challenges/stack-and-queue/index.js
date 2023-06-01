@@ -168,11 +168,36 @@ class AnimalShelter {
   }
 }
 
+// Code Challenge 13: Multi Bracket Validation
+// Define a function called validateBrackets that takes a string as an argument and returns a boolean representing whether or not the brackets in the string are balanced.
+function validateBrackets(string) {
+  let stack = new Stack();
+  let open = ['(', '[', '{'];
+  let close = [')', ']', '}'];
+
+  for (let i = 0; i < string.length; i++) {
+    if (open.includes(string[i])) {
+      stack.push(string[i]);
+    } else if (close.includes(string[i])) {
+      let top = stack.pop();
+      if (open.indexOf(top) !== close.indexOf(string[i])) {
+        return false;
+      }
+    }
+  }
+  if (stack.top) {
+    return false;
+  }
+  return true;
+}
+
+
 module.exports = {
   // Node,
   Stack,
   Queue,
   PseudoQueue,
   AnimalShelter,
+  validateBrackets,
 };
 

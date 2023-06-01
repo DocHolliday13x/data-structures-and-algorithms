@@ -1,7 +1,7 @@
 `use strict`;
 
 // Imports/Requires
-const { Queue } = require('../index.js');
+const { Queue, AnimalShelter, validateBrackets } = require('../index.js');
 
 // Tests
 describe('Queue', () => {
@@ -98,6 +98,62 @@ describe('Queue', () => {
     expect(queue.dequeue()).toEqual('Queue is empty');
     expect(queue.peek()).toEqual('Queue is empty');
   });
+
+  // Code Challenge 12 Tests
+  // 1. Can successfully add animals to correct queue
+  it('Can successfully add animals to correct queue', () => {
+    let shelter = new AnimalShelter();
+    shelter.enqueue('Barry','dog');
+    shelter.enqueue('Bella','dog');
+    shelter.enqueue('Fwah', 'cat');
+
+    expect(shelter.dog.front.name).toEqual('Barry');
+    expect(shelter.cats.front.name).toEqual('Fwah');
+  });
+
+  // Code Challenge 13 Tests
+  // 1. Can successfully validate brackets
+  it('Can successfully validate brackets', () => {
+    const result = validateBrackets('([]{})');
+    expect(result).toBe(true);
+  });
+
+  it('Returns false for unbalanced brackets', () => {
+    const result = validateBrackets('[({)}]');
+    expect(result).toBe(false);
+  });
+
+  it('Returns true for an empty string', () => {
+    const result = validateBrackets('');
+    expect(result).toBe(true);
+  });
+
+  it('Can validate brackets with other characters', () => {
+    const result = validateBrackets('a(b[c]d)e{f}');
+    expect(result).toBe(true);
+  });
+
+  it('Returns false when only opening brackets are present', () => {
+    const result = validateBrackets('({[');
+    expect(result).toBe(false);
+  });
+
+  it('Returns false when only closing brackets are present', () => {
+    const result = validateBrackets('})]');
+    expect(result).toBe(false);
+  });
+
+  it('Returns false for more opening brackets than closing brackets', () => {
+    const result = validateBrackets('[({})');
+    expect(result).toBe(false);
+  });
+
+  it('Returns false for more closing brackets than opening brackets', () => {
+    const result = validateBrackets('({})]');
+    expect(result).toBe(false);
+  });
+
+
 });
 
 
