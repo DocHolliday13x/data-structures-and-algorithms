@@ -1,4 +1,4 @@
-# Stack and Queue
+# Trees
 <!-- Short summary or background information -->
 
 **Code Challenge 15 - Trees**
