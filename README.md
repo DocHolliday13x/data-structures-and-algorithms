@@ -35,3 +35,4 @@ To run your tests
 | 11 | [stack-queue-pseudo](./javascript/code-challenges/stack-and-queue/README.md) |
 | 12 | [stack-queue-animal-shelter](./javascript/code-challenges/stack-and-queue/README.md) |
 | 13 | [multi-bracket-validation](./javascript/code-challenges/stack-and-queue/README.md) |
+| 15 | [trees](./javascript/code-challenges/trees/README.md) |
