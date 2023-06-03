@@ -9,19 +9,19 @@ class Node {
 }
 
 // not required for Code challenge 15
-class KaryNode {
-  constructor(value, k) {
-    this.value = value;
-    this.children = new Array(k).fill(null);
-  }
-}
+// class KaryNode {
+//   constructor(value, k) {
+//     this.value = value;
+//     this.children = new Array(k).fill(null);
+//   }
+// }
 
-// not required for Code challenge 15
-class KaryTree {
-  constructor() {
-    this.root = null;
-  }
-}
+// // not required for Code challenge 15
+// class KaryTree {
+//   constructor() {
+//     this.root = null;
+//   }
+// }
 
 class Tree {
   constructor() {
@@ -98,26 +98,26 @@ class BinarySearchTree extends Tree {
       return this;
     }
 
-    const _insert = (node) => {
+    const insert = (node) => {
       if (value < node.value) {
         if (node.left === null) {
           node.left = newNode;
           return this;
         } else if (node.left !== null) {
-          return _insert(node.left);
+          return insert(node.left);
         }
       } else if (value > node.value) {
         if (node.right === null) {
           node.right = newNode;
           return this;
         } else if (node.right !== null) {
-          return _insert(node.right);
+          return insert(node.right);
         }
       } else {
         return null;
       }
     };
-    _insert(this.root);
+    insert(this.root);
   }
 
   containsValue(value) {
@@ -172,8 +172,8 @@ module.exports = {
   Node,
   Tree,
   BinarySearchTree,
-  KaryNode,
-  KaryTree,
+  // KaryNode,
+  // KaryTree,
 };
 
 
