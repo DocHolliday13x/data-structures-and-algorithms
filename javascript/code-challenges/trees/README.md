@@ -57,3 +57,5 @@ I started by colloborating on a whiteboard with Reece Renninger. Our whiteboard 
 7. All tests passed.
 
 - ![Terminal](/public/codeChallenge15Tests.png)
+
+- ![Trees](https://media.giphy.com/media/SgvQmElxQgMqmdXSY2/giphy.gif)
