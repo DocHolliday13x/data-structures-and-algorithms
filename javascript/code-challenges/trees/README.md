@@ -39,7 +39,7 @@ I started by colloborating on a whiteboard with Reece Renninger. Our whiteboard 
 
 - **Code Challenge 15 - Trees**
 
-1. To allow for testing, I created a `index.js` file and a `trees.test.js` file inside of a __test__ folder, and ran the following commands in my terminal to allow for jest testing:
+1. To allow for testing, I created a `index.js` file and a `trees.test.js` file inside of a test folder, and ran the following commands in my terminal to allow for jest testing:
    - `npm init -y`
    - `npm i jest`
    - `npm test`
