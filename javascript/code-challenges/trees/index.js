@@ -143,6 +143,21 @@ class BinarySearchTree extends Tree {
     return true;
   }
 
+  findMaxValue() {
+    if (this.root === null) {
+      return null;
+    }
+
+    let current = this.root;
+    let maxValue = current.value;
+
+    while (current) {
+      maxValue = current.value;
+      current = current.right;
+    }
+    return maxValue;
+  }
+
 }
 
 
