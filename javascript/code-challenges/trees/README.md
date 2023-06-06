@@ -13,15 +13,23 @@ The following methods were implemented with our class Tree:
 - `inOrder()` - Returns an array of the values, ordered appropriately.
 - `postOrder()` - Returns an array of the values, ordered appropriately.
 
+**Code Challenge 16 - Find Maximum Value in a Binary Tree**
+Today's assignment will be a continuation of the previous assignment. We will be adding a new method to the Binary Search Tree class called `findMaximumValue()`. This method will take no arguments, and return the maximum value in the binary search tree. We will start with our whiteboard process, then create a new method in our Binary Search Tree class, and finally write tests for our new method.
+
 ## Colloborators
 
 - Reece Renninger
+- Reed Vogt
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 - **Code Challenge 15**
 
 - ![Whiteboard](/public/codeChallenge15Whiteboard.png)
+
+- **Code Challenge 16**
+
+- ![Whiteboard](/public/codeChallenge16Whiteboard.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -33,6 +41,11 @@ I started by colloborating on a whiteboard with Reece Renninger. Our whiteboard 
 - `postOrder()` - O(n)
 - `add(value)` - O(h) O(log n)
 - `contains(value)` - O(h) O(log n)
+
+- **Code Challenge 16 - Find Maximum Value in a Binary Tree**
+I started by collaborating on the whiteboard with Reed Vogt. After establishing our whiteboard, I created a new method in our Binary Search Tree class called `findMaximumValue()`. This method will take no arguments, and return the maximum value in the binary search tree. I will then write tests for our new method. The following methods will have a Big O space/time complexity:
+
+- `findMaximumValue()` - O(n)
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
@@ -59,3 +72,17 @@ I started by colloborating on a whiteboard with Reece Renninger. Our whiteboard 
 - ![Terminal](/public/codeChallenge15Tests.png)
 
 - ![Trees](https://media.giphy.com/media/SgvQmElxQgMqmdXSY2/giphy.gif)
+
+- **Code Challenge 16 - Find Maximum Value in a Binary Tree**
+
+1. Continued from the previous assignment, so I already have access to my `Node`, `Tree` and `BinarySearchTree` classes.
+
+2. Working in my `index.js` file, I created a new method in our Binary Search Tree class called `findMaximumValue()`. This method will take no arguments, and return the maximum value in the binary search tree.
+
+3. I then wrote tests for our new method in the `trees.test.js` file.
+
+4. After running the tests in the terminal using the command `npm test`, all tests passed.
+
+- ![Terminal](/public/codeChallenge16Tests.png)
+
+- ![Nodes](https://media.giphy.com/media/12bkMjatTEfoWI/giphy.gif)

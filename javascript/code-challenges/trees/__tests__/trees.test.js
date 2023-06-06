@@ -69,5 +69,13 @@ describe (`Binary Tree`, () => {
     expect(bst.containsValue(3)).toBeTruthy();
   });
 
+  // Can successfully find the maximum value in a binary tree
+  it(`Can successfully find the maximum value in a binary tree`, () => {
+    bst.add(1);
+    bst.add(2);
+    bst.add(3);
+    expect(bst.findMaxValue()).toEqual(3);
+  });
+
 });
 
