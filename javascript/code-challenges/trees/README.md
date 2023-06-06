@@ -82,3 +82,7 @@ I started by collaborating on the whiteboard with Reed Vogt. After establishing 
 3. I then wrote tests for our new method in the `trees.test.js` file.
 
 4. After running the tests in the terminal using the command `npm test`, all tests passed.
+
+- ![Terminal](/public/codeChallenge16Tests.png)
+
+- ![Nodes](https://media.giphy.com/media/12bkMjatTEfoWI/giphy.gif)
