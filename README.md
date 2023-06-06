@@ -36,3 +36,4 @@ To run your tests
 | 12 | [stack-queue-animal-shelter](./javascript/code-challenges/stack-and-queue/README.md) |
 | 13 | [multi-bracket-validation](./javascript/code-challenges/stack-and-queue/README.md) |
 | 15 | [trees](./javascript/code-challenges/trees/README.md) |
+| 16 | [tree-max](./javascript/code-challenges/trees/README.md) |
