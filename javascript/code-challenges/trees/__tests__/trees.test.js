@@ -1,6 +1,6 @@
 `use strict`;
 
-const { Tree, BinarySearchTree, BFT  } = require(`../index.js`);
+const { Tree, BinarySearchTree, BFT } = require(`../index.js`);
 
 // Code Challenge 15: Trees Tests
 describe(`Binary Tree`, () => {
