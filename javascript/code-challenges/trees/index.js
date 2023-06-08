@@ -51,19 +51,25 @@ class KaryTree {
   // Code Challenge 18: FizzBuzz Tree
   fizzBuzzTree(karyTree) {
     if (!karyTree.root) {
-      return null;
+      return [];
     }
 
+    const results = [];
+
     const _traverse = (node) => {
+      let value;
+
       if (node.value % 3 === 0 && node.value % 5 === 0) {
-        node.value = 'FizzBuzz';
+        value = 'FizzBuzz';
       } else if (node.value % 3 === 0) {
-        node.value = 'Fizz';
+        value = 'Fizz';
       } else if (node.value % 5 === 0) {
-        node.value = 'Buzz';
+        value = 'Buzz';
       } else {
-        node.value = node.value.toString();
+        value = node.value.toString();
       }
+
+      results.push(value);
 
       for (let i = 0; i < node.children.length; i++) {
         if (node.children[i]) {
@@ -71,8 +77,9 @@ class KaryTree {
         }
       }
     };
+
     _traverse(karyTree.root);
-    return karyTree;
+    return results;
   }
 }
 
