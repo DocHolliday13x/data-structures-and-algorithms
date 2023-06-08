@@ -22,6 +22,32 @@ class KaryTree {
     this.root = null;
   }
 
+  // Need to add a method that takes in a value and adds a new node to the tree
+  add(value) {
+    const newNode = new KaryNode(value, 3);
+
+    if (!this.root) {
+      this.root = newNode;
+      return this;
+    }
+
+    const _traverse = (node) => {
+      for (let i = 0; i < node.children.length; i++) {
+        if (!node.children[i]) {
+          node.children[i] = newNode;
+          return;
+        }
+      }
+      for (let i = 0; i < node.children.length; i++) {
+        if (node.children[i]) {
+          _traverse(node.children[i]);
+        }
+      }
+    };
+    _traverse(this.root);
+    return this;
+  }
+
   // Code Challenge 18: FizzBuzz Tree
   fizzBuzzTree(karyTree) {
     if (!karyTree.root) {
