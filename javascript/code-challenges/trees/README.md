@@ -19,11 +19,24 @@ Today's assignment will be a continuation of the previous assignment. We will be
 **Code Challenge 17 - Breadth First Traversal**
 Today's assignment will be a continuation of the previous assignment. We will be adding a new method to the Binary Search Tree class called `breadthFirstTraversal()`. This method will take `tree` as an argument, and return an array of the values, ordered appropriately. We will start with our whiteboard process, then create a new method in our Binary Search Tree class, and finally write tests for our new method.
 
+**Code Challenge 18 - FizzBuzz Tree**
+Oh boy, it's FizzBuzz time! Today's assignment will be a continuation of the previous assignment. We will be adding a new method to the Binary Search Tree class called `fizzBuzzTree()`. This method will take `karyTree` as an argument, and return a new tree with the values modified as follows:
+
+- If the value is divisible by 3, replace the value with “Fizz”
+- If the value is divisible by 5, replace the value with “Buzz”
+- If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+- If the value is not divisible by 3 or 5, simply turn the number into a String.
+
+We will start with our whiteboard process, then create a new method in our Binary Search Tree class, and finally write tests for our new method.
+
 ## Colloborators
 
 - Reece Renninger
 - Reed Vogt
 - Malik Torres
+- Kaeden O'Meara
+- Ike Steoger
+- Eva Smith
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
@@ -38,6 +51,10 @@ Today's assignment will be a continuation of the previous assignment. We will be
 - **Code Challenge 17**
 
 - ![Whiteboard](/public/codeChallenge17Whiteboard.png)
+
+- **Code Challenge 18**
+
+- ![Whiteboard](/public/codeChallenge18Whiteboard.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->

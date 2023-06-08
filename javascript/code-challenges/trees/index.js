@@ -9,19 +9,46 @@ class Node {
 }
 
 // not required for Code challenge 15
-// class KaryNode {
-//   constructor(value, k) {
-//     this.value = value;
-//     this.children = new Array(k).fill(null);
-//   }
-// }
+class KaryNode {
+  constructor(value, k) {
+    this.value = value;
+    this.children = new Array(k).fill(null);
+  }
+}
 
-// // not required for Code challenge 15
-// class KaryTree {
-//   constructor() {
-//     this.root = null;
-//   }
-// }
+// not required for Code challenge 15
+class KaryTree {
+  constructor() {
+    this.root = null;
+  }
+
+  // Code Challenge 18: FizzBuzz Tree
+  fizzBuzzTree(karyTree) {
+    if (!karyTree.root) {
+      return null;
+    }
+
+    const _traverse = (node) => {
+      if (node.value % 3 === 0 && node.value % 5 === 0) {
+        node.value = 'FizzBuzz';
+      } else if (node.value % 3 === 0) {
+        node.value = 'Fizz';
+      } else if (node.value % 5 === 0) {
+        node.value = 'Buzz';
+      } else {
+        node.value = node.value.toString();
+      }
+
+      for (let i = 0; i < node.children.length; i++) {
+        if (node.children[i]) {
+          _traverse(node.children[i]);
+        }
+      }
+    };
+    _traverse(karyTree.root);
+    return karyTree;
+  }
+}
 
 class Tree {
   constructor() {
@@ -157,6 +184,7 @@ class BinarySearchTree extends Tree {
     }
     return maxValue;
   }
+
 }
 
 // Code Challenge 17: Breadth First Traversal
@@ -192,8 +220,8 @@ module.exports = {
   Tree,
   BinarySearchTree,
   BFT,
-  // KaryNode,
-  // KaryTree,
+  KaryNode,
+  KaryTree,
 };
 
 // let tree = new Tree();
