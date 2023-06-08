@@ -19,11 +19,24 @@ Today's assignment will be a continuation of the previous assignment. We will be
 **Code Challenge 17 - Breadth First Traversal**
 Today's assignment will be a continuation of the previous assignment. We will be adding a new method to the Binary Search Tree class called `breadthFirstTraversal()`. This method will take `tree` as an argument, and return an array of the values, ordered appropriately. We will start with our whiteboard process, then create a new method in our Binary Search Tree class, and finally write tests for our new method.
 
+**Code Challenge 18 - FizzBuzz Tree**
+Oh boy, it's FizzBuzz time! Today's assignment will be a continuation of the previous assignment. We will be adding a new method to the Binary Search Tree class called `fizzBuzzTree()`. This method will take `karyTree` as an argument, and return a new tree with the values modified as follows:
+
+- If the value is divisible by 3, replace the value with “Fizz”
+- If the value is divisible by 5, replace the value with “Buzz”
+- If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+- If the value is not divisible by 3 or 5, simply turn the number into a String.
+
+We will start with our whiteboard process, then create a new method in our Binary Search Tree class, and finally write tests for our new method.
+
 ## Colloborators
 
 - Reece Renninger
 - Reed Vogt
 - Malik Torres
+- Kaeden O'Meara
+- Ike Steoger
+- Eva Smith
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
@@ -38,6 +51,10 @@ Today's assignment will be a continuation of the previous assignment. We will be
 - **Code Challenge 17**
 
 - ![Whiteboard](/public/codeChallenge17Whiteboard.png)
+
+- **Code Challenge 18**
+
+- ![Whiteboard](/public/codeChallenge18Whiteboard.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -59,6 +76,11 @@ I started by collaborating on the whiteboard with Reed Vogt. After establishing 
 I started by collaborating on the whiteboard with Malik Torres. After establishing our whiteboard, I created a new method in our Binary Search Tree class called `breadthFirstTraversal()`. This method will take `tree` as an argument, and return an array of the values, ordered appropriately. I will then write tests for our new method. The following methods will have a Big O space/time complexity:
 
 - `breadthFirstTraversal(tree)` - O(n) on a balanced tree, O(n^2) on an unbalanced tree
+
+- **Code Challenge 18 - FizzBuzz Tree**
+I started with my whiteboard process, then created a new method in my KaryTree class called `fizzBuzzTree()`. This method will take `karyTree` as an argument, and return a new tree with the modified values listed above. I then wrote tests for my new method. The following methods will have a Big O space/time complexity:
+
+- `fizzBuzzTree(karyTree)` - O(n) on a balanced tree, O(n^2) on an unbalanced tree
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
@@ -113,3 +135,20 @@ I started by collaborating on the whiteboard with Malik Torres. After establishi
 - ![Terminal](/public/codeChallenge17tests.png)
 
 - ![Tree](https://media.giphy.com/media/VjrcYO72iu4lG/giphy.gif)
+
+- **Code Challenge 18 - FizzBuzz Tree**
+
+1. Continued from the previous assignment, so I already have access to my `Node`, `Tree`, `BinarySearchTree`, and `KaryTree` classes.
+
+2. Working in my `index.js` file, I created a new method in our Kary Tree class called `fizzBuzzTree()`. This method will take `karyTree` as an argument, and return a new tree with the modified values listed above.
+
+3. I then wrote tests for our new method in the `trees.test.js` file.
+
+4. I had to write an `add(value)` method in my `KaryTree` class to allow for testing.
+
+5. I ran into issues with testing because my `fizzBuzzTree()` method was returning the entire KaryTree object rather than the desired array. I had to refactor my code to get the desired result.
+
+6. After running the tests in the terminal using the command `npm test`, all my fizzBuzz tests are failing but I've reached my time limit and must submit my work.
+
+- ![Terminal](/public/codeChallenge18Tests.png)
+- ![Roots](https://media.giphy.com/media/3o6nUQ8HnkWqEMwCAM/giphy.gif)
