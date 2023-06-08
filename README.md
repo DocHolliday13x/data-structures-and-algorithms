@@ -37,3 +37,4 @@ To run your tests
 | 13 | [multi-bracket-validation](./javascript/code-challenges/stack-and-queue/README.md) |
 | 15 | [trees](./javascript/code-challenges/trees/README.md) |
 | 16 | [tree-max](./javascript/code-challenges/trees/README.md) |
+| 17 | [tree-breadth-first](./javascript/code-challenges/trees/README.md) |
