@@ -77,6 +77,11 @@ I started by collaborating on the whiteboard with Malik Torres. After establishi
 
 - `breadthFirstTraversal(tree)` - O(n) on a balanced tree, O(n^2) on an unbalanced tree
 
+- **Code Challenge 18 - FizzBuzz Tree**
+I started with my whiteboard process, then created a new method in my KaryTree class called `fizzBuzzTree()`. This method will take `karyTree` as an argument, and return a new tree with the modified values listed above. I then wrote tests for my new method. The following methods will have a Big O space/time complexity:
+
+- `fizzBuzzTree(karyTree)` - O(n) on a balanced tree, O(n^2) on an unbalanced tree
+
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 
@@ -130,3 +135,17 @@ I started by collaborating on the whiteboard with Malik Torres. After establishi
 - ![Terminal](/public/codeChallenge17tests.png)
 
 - ![Tree](https://media.giphy.com/media/VjrcYO72iu4lG/giphy.gif)
+
+- **Code Challenge 18 - FizzBuzz Tree**
+
+1. Continued from the previous assignment, so I already have access to my `Node`, `Tree`, `BinarySearchTree`, and `KaryTree` classes.
+
+2. Working in my `index.js` file, I created a new method in our Kary Tree class called `fizzBuzzTree()`. This method will take `karyTree` as an argument, and return a new tree with the modified values listed above.
+
+3. I then wrote tests for our new method in the `trees.test.js` file.
+
+4. I had to write an `add(value)` method in my `KaryTree` class to allow for testing.
+
+5. I ran into issues with testing because my `fizzBuzzTree()` method was returning the entire KaryTree object rather than the desired array. I had to refactor my code to get the desired result.
+
+6. After running the tests in the terminal using the command `npm test`, all my fizzBuzz tests are failing but I've reached my time limit and must submit my work.
