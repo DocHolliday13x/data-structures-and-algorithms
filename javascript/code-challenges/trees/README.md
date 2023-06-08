@@ -149,3 +149,6 @@ I started with my whiteboard process, then created a new method in my KaryTree c
 5. I ran into issues with testing because my `fizzBuzzTree()` method was returning the entire KaryTree object rather than the desired array. I had to refactor my code to get the desired result.
 
 6. After running the tests in the terminal using the command `npm test`, all my fizzBuzz tests are failing but I've reached my time limit and must submit my work.
+
+- ![Terminal](/public/codeChallenge18Tests.png)
+- ![Roots](https://media.giphy.com/media/3o6nUQ8HnkWqEMwCAM/giphy.gif)
