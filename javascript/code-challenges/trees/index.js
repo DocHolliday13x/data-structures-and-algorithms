@@ -1,4 +1,4 @@
-'use strict';
+`use strict`;
 
 class Node {
   constructor(value) {
@@ -54,7 +54,6 @@ class Tree {
     const results = [];
 
     const traverse = (node) => {
-
       if (node.left) {
         traverse(node.left);
       }
@@ -82,7 +81,6 @@ class Tree {
     traverse(this.root);
     return results;
   }
-
 }
 
 class BinarySearchTree extends Tree {
@@ -133,7 +131,8 @@ class BinarySearchTree extends Tree {
         current = current.left;
       } else if (value > current.value) {
         current = current.right;
-      } else { // value === current.value
+      } else {
+        // value === current.value
         found = true;
       }
     }
@@ -143,6 +142,7 @@ class BinarySearchTree extends Tree {
     return true;
   }
 
+  // Code Challenge 16: Find the Maximum Value in a Binary Tree
   findMaxValue() {
     if (this.root === null) {
       return null;
@@ -157,13 +157,44 @@ class BinarySearchTree extends Tree {
     }
     return maxValue;
   }
-
 }
 
+// Code Challenge 17: Breadth First Traversal
+class BFT {
+  breadthFirst(tree) {
+    if (tree.root === null) {
+      return null;
+    }
 
+    const queue = [];
+    const results = [];
 
+    queue.push(tree.root);
 
+    while (queue.length) {
+      let current = queue.shift();
+      results.push(current.value);
 
+      if (current.left) {
+        queue.push(current.left);
+      }
+
+      if (current.right) {
+        queue.push(current.right);
+      }
+    }
+    return results;
+  }
+}
+
+module.exports = {
+  Node,
+  Tree,
+  BinarySearchTree,
+  BFT,
+  // KaryNode,
+  // KaryTree,
+};
 
 // let tree = new Tree();
 // tree.root = new Node(10);
@@ -181,18 +212,3 @@ class BinarySearchTree extends Tree {
 // console.log('-------postOrder-------');
 // results = tree.postOrder();
 // console.log('postOrder results:', results);
-
-
-module.exports = {
-  Node,
-  Tree,
-  BinarySearchTree,
-  // KaryNode,
-  // KaryTree,
-};
-
-
-
-
-
-

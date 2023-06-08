@@ -1,13 +1,20 @@
 `use strict`;
 
-const { BinarySearchTree } = require(`../index.js`);
+const { Tree, BinarySearchTree, BFT } = require(`../index.js`);
 
 // Code Challenge 15: Trees Tests
-describe (`Binary Tree`, () => {
+describe(`Binary Tree`, () => {
   let bst;
+  // eslint-disable-next-line no-unused-vars
+  let tree;
+  // eslint-disable-next-line no-unused-vars
+  let bft;
 
   beforeEach(() => {
+    tree = new Tree();
     bst = new BinarySearchTree();
+    bft = new BFT();
+
   });
 
   // Can successfully instantiate an empty tree
@@ -71,11 +78,20 @@ describe (`Binary Tree`, () => {
 
   // Can successfully find the maximum value in a binary tree
   it(`Can successfully find the maximum value in a binary tree`, () => {
+    const bst = new BinarySearchTree();
     bst.add(1);
     bst.add(2);
     bst.add(3);
     expect(bst.findMaxValue()).toEqual(3);
   });
 
-});
+  // Can successfully traverse the input tree using a Breadth-first approach
+  it(`Can successfully traverse the input tree using a Breadth-first approach`, () => {
+    const bst = new BinarySearchTree();
+    bst.add(1);
+    bst.add(2);
+    bst.add(3);
+    expect(bft.breadthFirst(bst)).toEqual([1, 2, 3]);
+  });
 
+});
