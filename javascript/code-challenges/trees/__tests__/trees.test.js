@@ -103,7 +103,7 @@ describe(`Binary Tree`, () => {
     karyTree.add(1);
     karyTree.add(2);
     karyTree.add(3);
-    expect(karyTree.fizzBuzz(karyTree)).toEqual([1, 2, `Fizz`]);
+    expect(karyTree.fizzBuzzTree(karyTree)).toEqual([1, 2, `Fizz`]);
   });
 
   // Can successfully replace node value with "Buzz" if node value is divisible by 5
@@ -112,7 +112,7 @@ describe(`Binary Tree`, () => {
     karyTree.add(1);
     karyTree.add(2);
     karyTree.add(5);
-    expect(karyTree.fizzBuzz(karyTree)).toEqual([1, 2, `Buzz`]);
+    expect(karyTree.fizzBuzzTree(karyTree)).toEqual([1, 2, `Buzz`]);
   });
 
   // Can successfully replace node value with "FizzBuzz" if node value is divisible by 3 and 5
@@ -121,7 +121,7 @@ describe(`Binary Tree`, () => {
     karyTree.add(1);
     karyTree.add(2);
     karyTree.add(15);
-    expect(karyTree.fizzBuzz(karyTree)).toEqual([1, 2, `FizzBuzz`]);
+    expect(karyTree.fizzBuzzTree(karyTree)).toEqual([1, 2, `FizzBuzz`]);
   });
 
   // Can successfully replace node value with stringified node value if node value is not divisible by 3 or 5
@@ -130,7 +130,7 @@ describe(`Binary Tree`, () => {
     karyTree.add(1);
     karyTree.add(2);
     karyTree.add(4);
-    expect(karyTree.fizzBuzz(karyTree)).toEqual([1, 2, `4`]);
+    expect(karyTree.fizzBuzzTree(karyTree)).toEqual([1, 2, `4`]);
   });
 
 });
