@@ -1,6 +1,6 @@
 `use strict`;
 
-const { Tree, BinarySearchTree, BFT } = require(`../index.js`);
+const { Tree, BinarySearchTree, BFT, KaryTree } = require(`../index.js`);
 
 // Code Challenge 15: Trees Tests
 describe(`Binary Tree`, () => {
@@ -9,11 +9,14 @@ describe(`Binary Tree`, () => {
   let tree;
   // eslint-disable-next-line no-unused-vars
   let bft;
+  // eslint-disable-next-line no-unused-vars
+  let karyTree;
 
   beforeEach(() => {
     tree = new Tree();
     bst = new BinarySearchTree();
     bft = new BFT();
+    karyTree = new KaryTree();
 
   });
 
@@ -92,6 +95,42 @@ describe(`Binary Tree`, () => {
     bst.add(2);
     bst.add(3);
     expect(bft.breadthFirst(bst)).toEqual([1, 2, 3]);
+  });
+
+  // Can successfully replace node value with "Fizz" if node value is divisible by 3
+  it(`Can successfully replace node value with "Fizz" if node value is divisible by 3`, () => {
+    const karyTree = new (KaryTree);
+    karyTree.add(1);
+    karyTree.add(2);
+    karyTree.add(3);
+    expect(karyTree.fizzBuzz(karyTree)).toEqual([1, 2, `Fizz`]);
+  });
+
+  // Can successfully replace node value with "Buzz" if node value is divisible by 5
+  it(`Can successfully replace node value with "Buzz" if node value is divisible by 5`, () => {
+    const karyTree = new (KaryTree);
+    karyTree.add(1);
+    karyTree.add(2);
+    karyTree.add(5);
+    expect(karyTree.fizzBuzz(karyTree)).toEqual([1, 2, `Buzz`]);
+  });
+
+  // Can successfully replace node value with "FizzBuzz" if node value is divisible by 3 and 5
+  it(`Can successfully replace node value with "FizzBuzz" if node value is divisible by 3 and 5`, () => {
+    const karyTree = new (KaryTree);
+    karyTree.add(1);
+    karyTree.add(2);
+    karyTree.add(15);
+    expect(karyTree.fizzBuzz(karyTree)).toEqual([1, 2, `FizzBuzz`]);
+  });
+
+  // Can successfully replace node value with stringified node value if node value is not divisible by 3 or 5
+  it(`Can successfully replace node value with stringified node value if node value is not divisible by 3 or 5`, () => {
+    const karyTree = new (KaryTree);
+    karyTree.add(1);
+    karyTree.add(2);
+    karyTree.add(4);
+    expect(karyTree.fizzBuzz(karyTree)).toEqual([1, 2, `4`]);
   });
 
 });
