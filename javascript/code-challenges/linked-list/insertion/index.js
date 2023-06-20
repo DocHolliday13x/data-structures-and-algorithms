@@ -57,15 +57,15 @@ InsertionSort = (input) => {
 
 
 // Tests
-let sorted = [8,4,23,42,16,15];
-let reverseSorted = [20,18,12,8,5,-2];
-let fewUniques = [5,12,7,5,5,7];
-let nearlySorted = [2,3,5,7,13,11];
+// let sorted = [8,4,23,42,16,15];
+// let reverseSorted = [20,18,12,8,5,-2];
+// let fewUniques = [5,12,7,5,5,7];
+// let nearlySorted = [2,3,5,7,13,11];
 
-console.log(InsertionSort(sorted));
-console.log(InsertionSort(reverseSorted));
-console.log(InsertionSort(fewUniques));
-console.log(InsertionSort(nearlySorted));
+// console.log(InsertionSort(sorted));
+// console.log(InsertionSort(reverseSorted));
+// console.log(InsertionSort(fewUniques));
+// console.log(InsertionSort(nearlySorted));
 
 //? Refactored Solution
 // InsertionSort = (input) => {
