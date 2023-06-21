@@ -58,19 +58,8 @@ const insertionSort = (input) => {
 insertionSort([8,4,23,42,16,15]);
 
 
-// Tests
-// let sorted = [8,4,23,42,16,15];
-// let reverseSorted = [20,18,12,8,5,-2];
-// let fewUniques = [5,12,7,5,5,7];
-// let nearlySorted = [2,3,5,7,13,11];
-
-// console.log(InsertionSort(sorted));
-// console.log(InsertionSort(reverseSorted));
-// console.log(InsertionSort(fewUniques));
-// console.log(InsertionSort(nearlySorted));
-
 //! Refactored Solution
-// InsertionSort = (input) => {
+// const insertionSort = (input) => {
 //   for (let i = 1; i < input.length; i++) {
 //     let j = i;
 //     while (j > 0 && input[j - 1] > input[j]) {
