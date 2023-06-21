@@ -38,3 +38,6 @@ To run your tests
 | 15 | [trees](./javascript/code-challenges/trees/README.md) |
 | 16 | [tree-max](./javascript/code-challenges/trees/README.md) |
 | 17 | [tree-breadth-first](./javascript/code-challenges/trees/README.md) |
+| 18 | [tree-fizz-buzz](./javascript/code-challenges/trees/README.md) |
+| 26 | [insertion-sort](./javascript/code-challenges/insertion/README.md) |
+| 27 | [merge-sort](./javascript/code-challenges/insertion/README.md) |
