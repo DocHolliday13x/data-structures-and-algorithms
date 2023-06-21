@@ -32,7 +32,7 @@
 // Nearly - Sorted [2,3,5,7,13,11]
 
 //! Solution
-Insert = (sorted, value) => {
+const insert = (sorted, value) => {
   let i = 0;
   while (value > sorted[i]) {
     i++;
@@ -46,14 +46,16 @@ Insert = (sorted, value) => {
   sorted.push(value);
 };
 
-InsertionSort = (input) => {
+const insertionSort = (input) => {
   let sorted = [];
   sorted[0] = input[0];
   for (let i = 1; i < input.length; i++) {
-    Insert(sorted, input[i]);
+    insert(sorted, input[i]);
   }
   return sorted;
 };
+
+insertionSort([8,4,23,42,16,15]);
 
 
 // Tests
@@ -67,7 +69,7 @@ InsertionSort = (input) => {
 // console.log(InsertionSort(fewUniques));
 // console.log(InsertionSort(nearlySorted));
 
-//? Refactored Solution
+//! Refactored Solution
 // InsertionSort = (input) => {
 //   for (let i = 1; i < input.length; i++) {
 //     let j = i;
@@ -79,14 +81,92 @@ InsertionSort = (input) => {
 //   return input;
 // };
 
-//? In this refactored function, we are using a while loop to swap elements in the array.
-//? The while loop will run as long as j is greater than 0 and the element to the left of j is greater than j.
-//? We are using array destructuring to swap the elements in the array.
-//? This is a more efficient solution because we are not creating a new array and we are only iterating through the array once.
+// In this refactored function, we are using a while loop to swap elements in the array.
+// The while loop will run as long as j is greater than 0 and the element to the left of j is greater than j.
+// We are using array destructuring to swap the elements in the array.
+// This is a more efficient solution because we are not creating a new array and we are only iterating through the array once.
 
+//? Code Challenge 27: Merge Sort
 
+// Merge Sort
+// Inputs: [8,4,23,42,16,15]
+// Output: [4,8,15,16,23,42]
 
+// Pseudocode
+// ALGORITHM Mergesort(arr)
+//     DECLARE n <-- arr.length
 
+//     if n > 1
+//       DECLARE mid <-- n/2
+//       DECLARE left <-- arr[0...mid]
+//       DECLARE right <-- arr[mid...n]
+//       // sort the left side
+//       Mergesort(left)
+//       // sort the right side
+//       Mergesort(right)
+//       // merge the sorted left and right sides together
+//       Merge(left, right, arr)
+
+// ALGORITHM Merge(left, right, arr)
+//     DECLARE i <-- 0
+//     DECLARE j <-- 0
+//     DECLARE k <-- 0
+
+//     while i < left.length && j < right.length
+//         if left[i] <= right[j]
+//             arr[k] <-- left[i]
+//             i <-- i + 1
+//         else
+//             arr[k] <-- right[j]
+//             j <-- j + 1
+
+//         k <-- k + 1
+
+//     if i = left.length
+//        set remaining entries in arr to remaining values in right
+//     else
+//        set remaining entries in arr to remaining values in left
+
+// Sample Arrays
+// Sorted - [8,4,23,42,16,15]
+// Reverse Sorted - [20,18,12,8,5,-2]
+// Few Uniques - [5,12,7,5,5,7]
+// Nearly - Sorted [2,3,5,7,13,11]
+
+//! Solution
+const mergeSort = (arr) => {
+  let n = arr.length;
+  if (n > 1) {
+    let mid = Math.floor(n / 2);
+    let left = arr.slice(0, mid);
+    let right = arr.slice(mid);
+    mergeSort(left);
+    mergeSort(right);
+    merge(left, right, arr);
+  }
+  return arr;
+};
+
+const merge = (left, right, arr) => {
+  let i = 0;
+  let j = 0;
+  let k = 0;
+  while (i < left.length && j < right.length) {
+    if (left[i] <= right[j]) {
+      arr[k++] = left[i++];
+    } else {
+      arr[k++] = right[j++];
+    }
+  }
+  while (i < left.length) {
+    arr[k++] = left[i++];
+  }
+  while (j < right.length) {
+    arr[k++] = right[j++];
+  }
+};
+
+mergeSort([8,4,23,42,16,15]);
 
 
 
