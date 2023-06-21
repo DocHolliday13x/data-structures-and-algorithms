@@ -7,8 +7,9 @@ Today's assignment will include a whiteboard of the code challenge. The code cha
 ## Colloborators
 
 - Reece Renninger
-- Kaeden O'Meara
+- Nick Mullaney
 - Ike Steoger
+- Kaeden O'Meara
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
@@ -16,10 +17,24 @@ Today's assignment will include a whiteboard of the code challenge. The code cha
 
 - ![Whiteboard](/public/codeChallenge26Whiteboard.png)
 
+- **Code Challenge 27**
+
+- ![Whiteboard](/public/codeChallenge27Whiteboard.png)
+
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 - **Code Challenge 26**
 I started by colloborating on a whiteboard with Reece Renninger. Our whiteboard is embedded above. After being provided the psuedo code from the code challenge, we were able to write the code in a short amount of time. We then wrote the tests and passed all of them. The Big O space/time for this approach is O(n^2).
 
+- **Code Challenge 27**
+I started by colloborating on a whiteboard with Reece Renninger and Nick Mullaney. Our whiteboard is embedded above. After being provided the psuedo code from the code challenge, we were able to write the code in a short amount of time. We then wrote tests. The Big O space/time for this approach is as follows:
+  - Time: O(log n) Space: O(n).
+
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
+
+- **Code Challenge 26**
+  - To run this code, you will need to clone down the repo from github. Once you have cloned the repo, you will need to run `npm i` in your terminal to install the dependencies. Once the dependencies are installed, you can run `npm test` in your terminal to run the tests. All tests should pass.
+
+- **Code Challenge 27**
+  - To run this code, you will need to clone down the repo from github. Once you have cloned the repo, you will need to run `npm i` in your terminal to install the dependencies. Once the dependencies are installed, you can run `npm test` in your terminal to run the tests. All tests should pass.
