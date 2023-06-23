@@ -1,7 +1,7 @@
 'use strict';
 
 const { Movies } = require('./movies');
-const { sortTitle, sortYear } = require('./sort');
+const { sortTitle, sortYear, compareYear, compareTitle } = require('./sort');
 
 describe('Sorters', () => {
   it('can sort movies by year', () => {
@@ -34,5 +34,21 @@ describe('Sorters', () => {
       'Stardust',
       'Valkyrie',
     ]);
+  });
+
+  // I have to write the tests for my comparison functions that compare by year and by title
+  it('can sort movies compared by year', () => {
+    const yearA = { year: 1984 };
+    const yearB = { year: 1988 };
+
+    expect(compareYear(yearA, yearB)).toEqual(4);
+
+  });
+
+  it('can sort movies compared by title', () => {
+    const titleA = { title: 'Beetlejuice' };
+    const titleB = { title: 'The Cotton Club' };
+
+    expect(compareTitle(titleA, titleB)).toBeLessThan(0);
   });
 });
