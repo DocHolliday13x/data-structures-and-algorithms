@@ -30,3 +30,5 @@ I started by creating this `movie-sort` file under `JavaScript`, then I imported
 
 - **Code Challenge 28**
   - To run this code, you will need to clone down the repo from github. Once you have cloned the repo, you will need to run `npm i` in your terminal to install the dependencies. Once the dependencies are installed, you can run `npm test` in your terminal to run the tests. All tests should pass.
+
+  - ![Tests](/public/codeChallenge28Tests.png)
