@@ -41,3 +41,4 @@ To run your tests
 | 18 | [tree-fizz-buzz](./javascript/trees/README.md) |
 | 26 | [insertion-sort](./javascript/insertion/README.md) |
 | 27 | [merge-sort](./javascript/insertion/README.md) |
+| 28 | [movie-sort](./javascript/movie-sort/README.md) |
