@@ -10,10 +10,9 @@ Today's assignment will not include a whiteboard for the code challenge. This co
 
 ## Colloborators
 
-- Reece Renninger
-- Nick Mullaney
-- Ike Steoger
-- Kaeden O'Meara
+- I had no collobrators for this code challenge. I had some stuff come up that had to be dealt with during that time frame, so I'm flying solo on this one.
+
+- ![GIF](https://media.giphy.com/media/3EuAsjZDUJefK/giphy.gif)
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
