@@ -1,7 +1,6 @@
 `use strict`;
 
-// const LinkedList = require('../LinkedList/index.js');
-const HashTable = require('../hashtable.js');
+const HashTable = require('./hashtable.js');
 
 describe('Hash Table', () => {
   it('can add a key/value to your hashtable resulting in the value being in the data structure', () => {
