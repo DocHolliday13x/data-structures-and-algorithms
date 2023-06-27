@@ -41,6 +41,12 @@ describe('Hash Table', () => {
     const hashTable = new HashTable(1024);
     expect(hashTable.hash('Luke...')).toBeLessThanOrEqual(1024);
   });
+
+  it('can successfully find a repeated word in a long string', () => {
+    const hashTable = new HashTable(1024);
+    const string = 'Once upon a time, there was a brave princess who...';
+    expect(hashTable.repeatedWord(string)).toBe('a');
+  });
 });
 
 
