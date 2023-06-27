@@ -79,7 +79,7 @@ class HashTable {
   repeatedWord(string) {
     let words = string.split(' ');
     let hash = new HashTable(words.length);
-    let wordCount = 0;
+    let wordCount = {};
 
     for (let i = 0; i < words.length; i++) {
       let word = words[i].toLowerCase();
