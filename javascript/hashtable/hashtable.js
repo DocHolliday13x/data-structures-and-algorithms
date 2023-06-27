@@ -74,7 +74,51 @@ class HashTable {
     }
     return keys;
   }
+
+  //? Code Challenge 31: Repeated Word
+  repeatedWord(string) {
+    let words = string.split(' ');
+    let hash = new HashTable(words.length);
+    let wordCount = 0;
+
+    for (let i = 0; i < words.length; i++) {
+      let word = words[i].toLowerCase();
+
+      // increase the count of current word
+      if (Object.prototype.hasOwnProperty.call(wordCount, word)) {
+        wordCount[word]++;
+      } else {
+        wordCount[word] = 1;
+      }
+
+      if (hash.contains(word)) {
+        return word;
+      }
+      hash.set(word, word);
+    }
+
+    // find most frequent words
+    let max = 0;
+    let freqWords = [];
+
+    for(let word in wordCount){
+      if (Object.prototype.hasOwnProperty.call(wordCount, word)){
+        if (wordCount[word] > max){
+          max = wordCount[word];
+          freqWords = [word];
+        } else if (wordCount[word] === max){
+          freqWords.push(word);
+        }
+      }
+    }
+    return {
+      repeatedWord: null,
+      wordCount: wordCount,
+      freqWords: freqWords
+    };
+  }
 }
+
 
 const table = new HashTable(1024);
 

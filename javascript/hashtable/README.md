@@ -35,7 +35,7 @@ There was no whiteboard requirement for today's code challenge.
 
 - **Code Challenge 31**
 
-There was no whiteboard requirement for today's code challenge.
+- ![Whiteboard](/public/codeChallenge31Whiteboard.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
