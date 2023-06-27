@@ -42,3 +42,4 @@ To run your tests
 | 26 | [insertion-sort](./javascript/insertion/README.md) |
 | 27 | [merge-sort](./javascript/insertion/README.md) |
 | 28 | [movie-sort](./javascript/movie-sort/README.md) |
+| 30 | [hashtable implementation](./javascript/hashtable/README.md) |
