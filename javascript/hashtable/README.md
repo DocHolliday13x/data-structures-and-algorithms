@@ -40,3 +40,6 @@ We didn't need to whiteboard for today's code challenge, and the majority of thi
   - To run this code, you will need to clone down the repo from github. Once you have cloned the repo, you will need to run `npm i` in your terminal to install the dependencies. Once the dependencies are installed, you can run `npm test` in your terminal to run the tests. All tests should pass.
 
   - ![Tests](/public/codeChallenge30Tests.png)
+  - ![Tests](/public/codeChallenge30Test.png)
+
+- ![hashGIF](https://media.giphy.com/media/26AHxNt3bpqw9Yexq/giphy.gif)
