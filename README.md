@@ -43,4 +43,9 @@ To run your tests
 | 27 | [merge-sort](./javascript/insertion/README.md) |
 | 28 | [movie-sort](./javascript/movie-sort/README.md) |
 | 30 | [hashtable implementation](./javascript/hashtable/README.md) |
-| 31 | [hashtable-repeated-word](./javascript/hashtable/README.md) |
+| 31 | [hashmap-repeated-word](./javascript/hashtable/README.md) |
+| 32 | [hashmap-tree-intersection](./javascript/hashtable/README.md) |
+| 33 | [hashmap-left-join](./javascript/hashtable/README.md) |
+| 35 | [graph](./javascript/graphs/README.md) |
+| 36 | [graph-breadth-first](./javascript/graphs/README.md) |
+| 37 | [graph-depth-first](./javascript/graphs/README.md) |
