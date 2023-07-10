@@ -14,6 +14,10 @@ describe('hasLeafWithWeight', () => {
 
   const target = 7;
   console.log(hasLeafWithWeight(root, target)); // true
+
+  it ('should return true if there exists a leaf whose path weight equals the given integer', () => {
+    expect(hasLeafWithWeight(root, target)).toEqual(true);
+  });
 });
 
 

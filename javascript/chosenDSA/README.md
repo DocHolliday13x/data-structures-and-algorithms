@@ -22,7 +22,7 @@ Today's code challenge is a personal pick between my group and I. We chose to wr
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 - **Code Challenge 38**
-We started today's challenge by colloborating on a whiteboard. We then wrote out the code for the `hasLeafWithWeight()` method. I then wrote tests for the method, but I failed to get my tests to pass. Truthfully, I don't know what the hell is going on with this stuff. The Big O for this method is on the whiteboard.
+We started today's challenge by colloborating on a whiteboard. We then wrote out the code for the `hasLeafWithWeight()` method. I then wrote a single test for the method, and the test should pass. Probably won't. But it might. The Big O for this method is on the whiteboard.
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
