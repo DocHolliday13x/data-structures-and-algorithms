@@ -47,5 +47,5 @@ To run your tests
 | 32 | [hashmap-tree-intersection](./javascript/hashtable/README.md) |
 | 33 | [hashmap-left-join](./javascript/hashtable/README.md) |
 | 35 | [graph](./javascript/graphs/README.md) |
-| 36 | [graph-breadth-first](./javascript/graphs/README.md) |
-| 37 | [graph-depth-first](./javascript/graphs/README.md) |
+| 37 | [graph-business-trip](./javascript/graphs/README.md) |
+| 38 | [leaf-weight](./javascript/chosenDSA/README.md) |

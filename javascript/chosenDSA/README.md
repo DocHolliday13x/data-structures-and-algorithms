@@ -1,4 +1,4 @@
-# Graphs
+# Chosen DS/A Challenges
 <!-- Short summary or background information -->
 
 - **Code Challenge 38 - Leaf Weight**
@@ -6,7 +6,7 @@ Today's code challenge is a personal pick between my group and I. We chose to wr
 
 ## Colloborators
 
-- **Code Challenge 38 - DSA**
+- **Code Challenge 38 - DS/A**
 - Reece Renninger
 - Ike Steoger
 - Kaeden O'Meara
